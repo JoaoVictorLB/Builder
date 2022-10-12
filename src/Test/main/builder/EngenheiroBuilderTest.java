@@ -48,4 +48,15 @@ class EngenheiroBuilderTest {
             assertEquals("Cargo inválido", e.getMessage());
         }
     }
+
+    @Test
+    void deveRetornarEngenheiroValido(){
+        EngenheiroBuilder engenheiroBuilder = new EngenheiroBuilder();
+        Engenheiro engenheiro = engenheiroBuilder
+                        .setRegistro(201665528)
+                        .setCargo("Engenheiro Chefe")
+                        .setNome("João Victor Lopes Borges")
+                        .build();
+        assertNotNull(engenheiro);
+    }
 }

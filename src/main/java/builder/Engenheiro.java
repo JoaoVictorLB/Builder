@@ -22,6 +22,7 @@ public class Engenheiro {
     public Engenheiro(){
         this.registro = 0;
         this.nome = "";
+        this.cargo = "";
     }
 
     public int getRegistro() {
